@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( HogSVM )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( HogSVM HogSVM.cpp )
+target_link_libraries( HogSVM ${OpenCV_LIBS} )
