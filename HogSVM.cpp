@@ -53,7 +53,7 @@ int main(int argc, char **argv)
 	namedWindow(window, WINDOW_AUTOSIZE);
 	imshow(window, pos_lst[300]);
 	waitKey(0);
-	return;
+	return 0;
 }
 
 void load_images(string directory, string list, vector<Mat> &img_lst) {
